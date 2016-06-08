@@ -3,15 +3,11 @@
 </template>
 
 <script>
+  import {getCount} from '../store/getters'
   export default {
-    data() {
-      return { };
-    },
     vuex: {
       getters: {
-        count: function (state) {
-          return state.count
-        }
+        count: getCount,
       }
     }
   }
